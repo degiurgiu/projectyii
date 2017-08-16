@@ -31,13 +31,20 @@
 		<?php echo $form->error($model,'url'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'role'); ?>
-		<?php echo $form->NumberField($model,'role'); ?>
-            </br><sapn>you can choose 1-Admin, 2-Moderator 3-Author</sapn>
-		<?php echo $form->error($model,'role'); ?>
-	</div>
-
+	<?php if(Yii::app()->user->isAdmin()){ ?>
+        <div class="row">
+                       <?php echo $form->labelEx($model,'role'); ?>
+                       <?php echo CHtml::activeDropDownList($model, 'role', 
+                               CHtml::listData(
+                        Rol::model()->findAll('id','rol_number','role'),
+                                       'rol_number',
+                                       'role'),
+                               array('empty' => '(Select)')
+                               );
+                       ?>
+            <?php echo $form->error($model,'role'); ?>
+	    </div>
+        <?php }?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'firstname'); ?>
 		<?php echo $form->textField($model,'firstname',array('size'=>60,'maxlength'=>256)); ?>
@@ -67,12 +74,12 @@
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
-<!--	<div class="row">
-		<?php //echo $form->labelEx($model,'last_login_time'); ?>
-		<?php// echo $form->textField($model,'last_login_time'); ?>
-		<?php //echo $form->error($model,'last_login_time'); ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'last_login_time'); ?>
+		<?php echo $form->textField($model,'last_login_time'); ?>
+		<?php echo $form->error($model,'last_login_time'); ?>
 	</div>
-
+<!--
 	<div class="row">
 		<?php //echo $form->labelEx($model,'create_dt'); ?>
 		<?php //echo $form->textField($model,'create_dt'); ?>
