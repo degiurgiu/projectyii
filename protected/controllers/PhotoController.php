@@ -39,7 +39,7 @@ class PhotoController extends Controller
 				'actions'=>array('admin'),
 				'users'=>array('@'),
 			),
-			array('deny',  // deny all users
+			array('deny',  // deny all usersdasd
 				'expression'=>'Yii::app()->user->isModerator()',
 			),
 		);
