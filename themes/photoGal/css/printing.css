@@ -1,0 +1,35 @@
+body {min-width:900px;max-width:900px;}
+//.form-section {width: 100%;}
+
+.left-form-section {
+	float: left;
+	width: 50%;
+}
+.right-form-section {
+	float: right;
+	width: 50%;
+}
+.ui-helper-hidden { display: none; }
+#updateclient-form > .form-section {
+	padding: 10px 20px;
+}
+.clienttypebuttonset {
+	height: 25px;
+}
+.ui-datepicker-trigger {
+	display:none;
+}
+.row {
+	display:inline;
+}
+.only {
+	width: 100%;
+}
+.form-table {
+	width: 100%;
+}
+span.required {display: none;}
+table tr td:first-child, .form table tr td:first-child { min-width:100px; width:100px;}
+.ui-state-default, label.ui-button.ui-state-default {display:none;}
+.ui-state-default, label.ui-button.ui-state-default {display:none;}
+.ui-state-active,label.ui-button.ui-state-active {display:inline;}

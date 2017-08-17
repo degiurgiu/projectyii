@@ -1,0 +1,70 @@
+/* http://blog.circleci.com/adaptive-placeholders/ */
+
+span.inputwrapper.error > input[type="text"], span.inputwrapper.error > input[type="password"] {-moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;}
+span.inputwrapper.success > input[type="text"], span.inputwrapper.success > input[type="password"] {-moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;}
+
+span.inputwrapper > input[type="text"]:focus,
+span.inputwrapper > input[type="password"]:focus {outline:none;-moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;}
+span.inputwrapper > input.readonly:focus {border:0 !important;}
+
+span.inputwrapper > input[type="text"]:focus:not([readonly]) ~ label[placeholder]:before,
+span.inputwrapper > input[type="text"]:valid ~ label[placeholder]:before,
+span.inputwrapper > input[type="password"]:focus ~ label[placeholder]:before,
+span.inputwrapper > input[type="password"]:valid ~ label[placeholder]:before { background-color:transparent !important; }
+
+span.inputwrapper > input[type="text"][readonly]:not([value=""]) ~ label[placeholder]:before,
+span.inputwrapper > input[type="password"][readonly]:not([value=""]) ~ label[placeholder]:before { background-color:transparent !important; }
+
+span.inputwrapper > input[type="text"]:invalid ~ label[placeholder][alt]:before,
+span.inputwrapper > input[type="password"]:invalid ~ label[placeholder][alt]:before { content:attr(alt); }
+
+/* placeholder position (old margin-top:-19px;) */
+span.inputwrapper > input[type="text"] ~ label[placeholder],
+span.inputwrapper > input[type="password"] ~ label[placeholder] { display:block; pointer-events:none; margin-top:-40px; float:left;}
+span.selectwrapper > select + label[placeholder]{ display:block; pointer-events:none; margin-top:-36px; float:left; }
+
+span.inputwrapper > input[type="text"] ~ label[placeholder]:before,
+span.inputwrapper > input[type="password"] ~ label[placeholder]:before {
+display:inline-block; content:attr(placeholder);
+margin:0 0 0 -2px; padding:0 4px; white-space:nowrap; line-height:1;
+-webkit-transition:0.3s ease-in-out; transition:0.3s ease-in-out;
+background-color:transparent !important;
+font-size:12px;
+}
+
+body { min-width:900px !important; background-image:none; font-family: "myriad-pro",sans-serif !important; }
+
+span.selectwrapper > select + label[placeholder]:before{
+display:inline-block; content:attr(placeholder);
+margin:0 0 0 -2px; padding:0 4px;white-space:nowrap; line-height:1;
+-webkit-transition:0.3s ease-in-out; transition:0.3s ease-in-out;
+background-color:transparent !important;
+}
+
+span.k-combobox + label[placeholder] { display:block; pointer-events:none; margin-top:-36px; float:left;}
+span.k-combobox + label[placeholder]:before {display:inline-block; content:attr(placeholder);
+margin:0 0 0 -2px; padding:0 4px; white-space:nowrap; line-height:1;
+-webkit-transition:0.3s ease-in-out; transition:0.3s ease-in-out;
+}
+
+span.selectwrapper > select, span.inputwrapper input[type="text"], span.inputwrapper input[type="password"], .fileinput span.inputwrapper input { height: 20px; box-shadow: none !important; }
+.portlet-separator span.inputwrapper input {height:auto;}
+
+div.fileinput > input[type="file"] ~ label[placeholder]:before { background-color: transparent !important; content: attr(placeholder); display: inline-block; font-size: 12px; line-height: 1; margin: 0 0 0 2px; padding: 0 4px; transition: all 0.3s ease-in-out 0s; white-space: nowrap; color: #999; }
+table.form-table td {padding-top:10px;}
+.form-label, td.form-label, div.form-section table.form-table td:first-child { text-align: left; }
+.ui-datepicker-trigger{ margin-top:3px; }
+
+a.box_add{ background:none !important; }
+.button_box { margin-top: 1px; padding: 1px 0px; text-align: center; width: 10px; height: 19px; line-height: 19px; }
+span.inputwrapper input[type="text"][readonly],
+span.inputwrapper input[type="password"][readonly],
+textarea[readonly] { color:gray; }
+div.fieldwrapper { width:100%; height: 28px; line-height: 28px;	}
+span.unit {line-height:28px;position:absolute;right:5px;top:0px;}
+
+@media (max-width: 1200px) {
+	#content{ margin-left:90px !important; }
+}
+
+span.unit {line-height:28px;position:absolute;right:5px;top:0px;}

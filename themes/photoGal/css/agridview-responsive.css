@@ -1,0 +1,199 @@
+/**********************/
+/* custom grid view 2 */
+/**********************/
+
+/* overwrites & resets*/
+
+.inner-grid-view-responsive tr td .button-action {
+    background-color: #fbfbfb !important;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: initial !important;
+    color: #3d3d3d !important;
+    display: block;
+    font-size: 14px !important;
+    height: 16px !important;
+    line-height: 18px;
+    padding: 1px 2px;
+    text-align: center;
+    vertical-align: middle !important;
+    width: 14px !important;
+    margin-top: 1px;
+}
+
+.inner-grid-view-responsive tr td .button-action:hover {
+    background-color: #bc1010 !important;
+    border-color: #bc1010 !important;
+    color: #fac8c8 !important;
+}
+
+.inner-grid-view-responsive a.delete {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #3d3d3d;
+    line-height: 16px !important;
+    /*margin: 0 !important;*/
+    padding: 0 3px;
+    position: relative !important;
+}
+
+.inner-grid-view-responsive a.delete:after {
+    content: none !important;
+}
+
+/*.inner-grid-view-responsive tr td a.delete.button-action:hover {*/
+    /*background-color: #bc1010 !important;*/
+    /*border-color: #bc1010 !important;*/
+    /*color: #fac8c8 !important;*/
+/*}*/
+
+.inner-grid-view-responsive tr td a.box_delete {
+    background: none !important;
+}
+.inner-grid-view-responsive tr td a.upload {
+    background: none !important;
+    display: block;
+    height: auto !important;
+    height: auto !important;
+}
+.inner-grid-view-responsive tr td a.upload:hover {
+    background: none !important;
+}
+
+/*a.download {*/
+    /*background: none !important;*/
+    /*display: inherit;*/
+    /*height: auto !important;*/
+    /*height: auto !important;*/
+/*}*/
+
+/*.inner-grid-view-responsive tr td a.download {*/
+    /*background: none repeat scroll 0 0 #fbfbfb !important;*/
+    /*display: block; height: auto !important; width: auto !important;*/
+/*}*/
+
+/*.inner-grid-view-responsive tr td a.download:hover { background: none repeat scroll 0 0 #fbfbfb !important; }*/
+
+/* definitions */
+
+.inner-grid-view-responsive {}
+
+.inner-grid-view-responsive thead.head-wrapper {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    display: table-header-group !important;
+    left: 0;
+    padding-bottom: 5px;
+    position: relative !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0 !important;
+}
+
+.inner-grid-view-responsive thead.head-wrapper tr th {
+    font-weight: bold;
+    overflow: hidden;
+    padding: 0 10px 0 1px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 0 !important;
+    height: 23px !important;
+}
+
+
+.grid-inner table.inner-grid-view-responsive tbody tr td:first-child {
+    padding-left: 10px !important;
+}
+
+.inner-grid-view-responsive thead.head-wrapper tr th:first-child {
+    padding-left: 10px !important;
+}
+
+
+.grid-view-responsive table thead tr.filters td {
+    padding: 0 4px 2px 1px !important;
+}
+.grid-view-responsive table thead tr.filters td:first-child {
+    padding-left: 4px !important;
+}
+
+.grid-view-responsive table thead tr.filters td div.filterwrapper,
+.grid-view-responsive table thead tr.filters td:first-child div.filterwrapper{
+    padding: 0px !important;
+}
+
+.grid-view-responsive table thead tr.filters td select {
+    height: 24px !important;
+    width: 100% !important
+}
+
+.inner-grid-view-responsive tbody {
+    border-top: 0 none !important;
+}
+
+
+.inner-grid-view-responsive thead tr.filters .k-dropdown {
+    width: auto !important;
+}
+
+.inner-grid-view-responsive tbody td.button-container-1 { width: 25px !important; }
+.inner-grid-view-responsive tbody td.button-container-2 { width: 55px !important; }
+.inner-grid-view-responsive tbody td.button-container-3 { width: 85px !important; }
+.inner-grid-view-responsive tbody td.button-container-4 { width: 115px !important; }
+.inner-grid-view-responsive tbody td.button-container-5 { width: 145px !important; }
+
+table.items.inner-grid-view-responsive tbody tr:first-child .col-icon:after, table.items.inner-grid-view-responsive tbody tr:first-child .col-rate:after, table.items.inner-grid-view-responsive tbody tr:first-child .col-status:after {
+    top: 0px !important;
+}
+table.items.inner-grid-view-responsive tbody tr:first-child .col-icon div span, table.items.inner-grid-view-responsive tbody tr:first-child .col-rate div span {
+    top: 0px !important;
+}
+
+/*@media (min-width: 1201px) and (max-width: 1614px) {*/
+@media (max-width: 1614px) {
+    .inner-grid-view-responsive tbody tr td.cut-line-100 {
+        text-overflow: ellipsis;
+        max-width: 100px !important;
+    }
+}
+
+.table-hlimited400 .inner-grid-view-responsive tbody{
+    max-height: 400px !important;
+    overflow: auto !important;
+}
+
+
+.button-reset-filters {
+    background-color: #444 !important;
+    border: 1px solid #444;
+    border-radius: 0;
+    color: #aaa !important;
+    cursor: pointer;
+    float: right;
+    font-size: 14px !important;
+    height: auto !important;
+    margin-left: 6px;
+    margin-top: 3px;
+    padding: 0 2px;
+}
+
+.button-reset-filters:hover {
+    background-color: #333 !important;
+    border-color: #333 !important;
+    color: #ffff00 !important;
+}
+
+.portlet-grid-info {
+    color: #ffff00 !important;
+    float: left;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 15px;
+}
+
+.grid-view-responsive {
+    overflow: hidden;
+}

@@ -1,0 +1,128 @@
+.column1 {float:left; width:48%; }
+.column2 {float:right; width:48%; }
+/*
+#menu li.active {
+	background:-moz-linear-gradient(100% 100% 90deg, #333333, #1a1a1a);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a1a1a), to(#333333));
+	background:-webkit-linear-gradient(#1a1a1a, #333333);
+	background:-o-linear-gradient(#1a1a1a, #333333);
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:35px;
+	text-transform:uppercase;
+	display:block;
+}
+#menu li.home.active {
+	background:none;
+}
+*/
+.flash-success { display:none; position:fixed; right:10px; top:10px; background-color:#000000;
+	border:1px solid black; text-align:center; /* for IE */ filter:alpha(opacity=80); /* CSS3 standard */ opacity:0.8;
+	min-height:40px; min-width:200px; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
+.flash-success p,.flash-success a { color:white;font-weight:bold; }
+.flash-success a { position:absolute; top:0px; right:0px;}
+.flash-success p {padding-left:4px;margin-top:10px; text-align:left; font-size:14px; color:white;}
+ .newuser, .neworganization {display:none;}
+.portlet-buttons { float:left; }
+.portlet-button { width:15px;height:14px; }
+.portlet-button .box_icon_plus { width:15px;height:14px; }
+.fold_button { float:right; }
+.box_content ul:hover { background:none; }
+.yiiTab ul:hover { background:none; }
+.yiiTab div.view {border:none;clear:both;}
+.yiiTab ul.tabs li {border:1px solid black ; }
+.yiiTab ul.tabs {border:none; }
+.yiiTab ul.tabs a:hover {background:none;}
+.yiiTab ul.tabs a { margin-left:0px; border:1px solid #e8e8e8; background:none;
+	background:-moz-linear-gradient(100% 100% 90deg, #e7e7e7, #f9f9f9);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e7e7e7));
+	background:-webkit-linear-gradient(#f9f9f9, #e7e7e7);
+	background:-o-linear-gradient(#f9f9f9, #e7e7e7); }
+.yiiTab ul.tabs li {border:none;}
+.yiiTab ul.tabs { border:1px solid #e8e8e8; margin:0px; padding:0px;
+	background:-moz-linear-gradient(100% 100% 90deg, #e7e7e7, #f9f9f9);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e7e7e7));
+	background:-webkit-linear-gradient(#f9f9f9, #e7e7e7);
+	background:-o-linear-gradient(#f9f9f9, #e7e7e7); }
+.yiiTab ul.tabs a.active {color:black;}
+/** end tabs **/
+
+/** grids **/
+.grid-view {padding:15px 0px 0px 0px;}
+.grid-view table.items th { background:none; color:black; }
+.grid-view table.items th a { color:black; }
+.grid-view table.items th a:hover { color:#000; }
+.grid-view table.items tr:hover, .grid-view table.items tr.selected {
+	background:-moz-linear-gradient(100% 100% 90deg, #ffc15d, #ffd773);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffd773), to(#ffc15d));
+	background:-webkit-linear-gradient(#ffd773, #ffc15d);
+	background:-o-linear-gradient(#ffd773, #ffc15d);
+}
+.grid-view table.items tr.odd { background-color:#FFF7E3; }
+.grid-view table.items tr.even { background-color:#FFF; }
+.grid-view .total { border:1px solid #E8E8E8; padding:0px 8px;
+	background:-moz-linear-gradient(100% 100% 90deg, #E7E7E7, #F9F9F9);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F9F9F9), to(#E7E7E7));
+	background:-webkit-linear-gradient(#F9F9F9, #E7E7E7);
+	background:-o-linear-gradient(#F9F9F9, #E7E7E7);
+	-moz-border-bottom-right-radius:5px; border-bottom-right-radius:5px; -moz-border-bottom-left-radius:5px; border-bottom-left-radius:5px; }
+.userlist .portlet-content, .organizationlist .portlet-content {
+	-moz-border-bottom-right-radius:5px; border-bottom-right-radius:5px; -moz-border-bottom-left-radius:5px; border-bottom-left-radius:5px; }
+.grid-view .summary { height:20px; line-height:19px; margin:0; color:#666; font-size:11px; float:left; }
+.grid-view .pager { float:right; height:20px; line-height:18px; margin:0 0 0 10px; }
+.grid-view .summary a { padding-right:5px; }
+.grid-view .summary a.active { font-weight:bold; }
+ul.yiiPager .first, ul.yiiPager .last { display:block; }
+ul.yiiPager a:link, ul.yiiPager a:visited { border:solid 1px #DEDEDE; color:#888; font-weight:bold; padding:1px 6px; text-decoration:none; }
+ul.yiiPager .hidden a { border:solid 1px #DEDEDE; color:#888; }
+ul.yiiPager .selected a { background:none; color:black; font-weight:bold; }
+
+/** forms **/
+#detailtab .form table { width:100%; margin-bottom:10px; margin-top:10px;}
+#detailtab .form table tr { width:100%;}
+#detailtab .form table tr td { width:49%; padding-right:10px;}
+#detailtab .form input,#detailtab .form select { float:right;}
+#detailtab .form #Organization_fax_area_code {width:30px; }
+#detailtab .form #Organization_area_code {width:30px; }
+#detailtab .form #Organization_country {width:30px; }
+#detailtab .form #Organization_zipcode {width:40px; }
+#detailtab .form #Organization_phone_number {width:80px; }
+#detailtab .form #Organization_fax_number {width:80px; }
+
+#userdetailtab .form table { width:100%; margin-bottom:10px; margin-top:10px;}
+#userdetailtab .form table tr { width:100%;}
+#userdetailtab .form table tr td { width:49%; padding-right:10px;}
+#userdetailtab .form input,#userdetailtab .form select { float:right;}
+#userdetailtab .form #User_fax_area_code { width:30px; }
+#userdetailtab .form #User_area_code { width:30px; }
+#userdetailtab .form #User_country { width:30px; }
+#userdetailtab .form #User_zipcode { width:40px; }
+#userdetailtab .form #User_phone_number { width:80px; }
+#userdetailtab .form #User_fax_number { width:80px; }
+
+.form { position:relative; }
+.form ul {width:100%; float:none; }
+.form ul li {float:none; font-weight:normal; line-height:normal; }
+#organization-form_es_, #updateorganization-form_es_, #updateuser-form_es_, #newuser-form_es_, #newclient-form_es_, #updateclient-form_es_ {
+	position:absolute; width:90%; text-align:center; margin-left:5%; margin-right:5%; background:red; color:white; font-weight:bold;
+	-webkit-border-bottom-right-radius:3px; -webkit-border-bottom-left-radius:3px; -moz-border-radius-bottomright:3px;
+	-moz-border-radius-bottomleft:3px; border-bottom-right-radius:3px; border-bottom-left-radius:3px; }
+#organization-form_es_ a, #updateorganization-form_es_ a, #updateuser-form_es_ a, #newuser-form a, #newclient-form_es_ a, #updateclient-form_es_ a {
+	float:right; }
+.row { display:inline; }
+.ui-dialog-content .row, .newclient .row, .clientdetail .row { display:block; }
+div.form input,
+div.form input,
+div.form textarea,
+div.form select { border:1px solid white; }
+div.form div.error input,
+div.form div.error input,
+div.form div.error textarea,
+div.form div.error select,
+div.form input.error,
+div.form textarea.error,
+div.form select.error { border:1px solid #C00; }
+
+/* jui css fixes */
+.ui-dialog-content { background:white; }

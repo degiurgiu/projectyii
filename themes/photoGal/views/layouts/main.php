@@ -1,4 +1,26 @@
-<?php /* @var $this Controller */ ?>
+<?php /* @var $this Controller */ 
+$p = Yii::app()->theme->baseUrl.'/';
+$c = Yii::app()->theme->baseUrl.'/css/'.Yii::app()->params['cssTheme'].'/';
+$cs = Yii::app()->clientScript;
+$cs->scriptMap = array(
+	'jquery-ui.css'=>$c.'jquery-ui.css',
+	'pager.css'=>$c.'blank.css',
+	'styles.css'=>$c.'blank.css',
+	'jquery.yiitab.css'=>$c.'blank.css',
+	'jquery-ui.min.js'=>$p.'js/jquery-ui.min.js',
+	'jquery-ui-i18n.min.js'=>$p.'js/jquery-ui-i18n.min.js',
+//	'jquery.ba-bbq.min.js'=>$p.'js/jquery.ba-bbq.min.js',
+	'jquery.ba-bbq.js'=>$p.'js/jquery.ba-bbq.js',
+	'jquery.yiiactiveform.js'=>$p.'js/jquery.yiijoulesform.js',
+	'jquery.yiigridview.js'=>$p.'js/jquery.yiigridview.js',
+	'yiigridview.helpers.js'=>$p.'js/yiigridview.helpers.js',
+	'jquery.yiilistview.js'=>$p.'js/jquery.yiilistview.js',
+	'jquery.yiitab.js'=>$p.'js/jquery.yiitab.js',
+	'jquery.js' => $p.'js/jquery.min.js',
+	'jquery.min.js' => $p.'js/jquery.min.js',
+);
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>

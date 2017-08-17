@@ -148,7 +148,7 @@ class Album extends CActiveRecord
 	{
 		$links=array();
 		foreach(Tag::string2array($this->tags) as $tag)
-			$links[]=CHtml::link(CHtml::encode($tag), array('album/search', 'tag'=>$tag),array('class'=>'btn btn-small'));
+			$links[]=CHtml::link(CHtml::encode($tag), array('album/search', 'tag'=>$tag),array('class'=>'btn btn-small toimage'));
 		return $links;
 	}
 

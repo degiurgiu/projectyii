@@ -36,11 +36,11 @@ class PhotoController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array(''),
-				'users'=>array('admin'),
+				'actions'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
-				'expression'=>'Yii::app()->user->isAdmin()',
+				'expression'=>'Yii::app()->user->isModerator()',
 			),
 		);
 	}

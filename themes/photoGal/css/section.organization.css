@@ -1,0 +1,32 @@
+div.client-status-bar { width: 100%; display: block; position: relative; }
+div.client-status-bar a {
+    display: block;
+    float: left;
+    font-family: arial;
+    font-size: 8px;
+    line-height: 19px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+div.client-status-bar .cs-red { background-color: #F8C5C5; color: #bc1237 !important; }
+div.client-status-bar .cs-green { background-color: #A8F299; color: #207d25 !important; }
+div.client-status-bar .cs-yellow { background-color: #EFEF00; color: #909000 !important;}
+div.client-status-bar .cs-black { background-color: #666; color: #ccc !important; }
+div.client-status-bar .cs-white { background-color: white; color: #cccccc !important; }
+div.client-status-bar .cs-difference { background-color: transparent; color: #fff !important;}
+
+.client-status-tooltip {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 0px;
+    color: #fff;
+    content: attr(title);
+    position: absolute;
+    z-index: 98;
+    width: auto;
+    line-height: 19px;
+    padding: 0 10px;
+    pointer-events: none;
+    text-align: center;
+}

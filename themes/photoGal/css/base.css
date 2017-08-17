@@ -1,0 +1,10 @@
+/**
+ * Base styling for the app frontend.
+ * Common, core & shared definitions.
+ */
+
+/* Date Picker */
+.dp-wrapper { padding-left : 20px !important; overflow: hidden; }
+.dp-wrapper.default-format { width: 104px; } /* ex: 10.12.2014 */
+.dp-wrapper span.inputwrapper input[type="text"] { border-left: 3px solid #fff !important; width: 79px !important; }
+.dp-wrapper button.ui-datepicker-trigger { background: none !important; margin-top: 1px !important; }

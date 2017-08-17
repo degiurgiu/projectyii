@@ -39,8 +39,9 @@
 
             <div class="row">
                     <?php echo $form->labelEx($model,'shareable'); ?>
-                    <?php echo $form->checkBox($model,'shareable'); ?>
+                    <?php echo $form->checkBox($model,'shareable', array('class'=>'chackbox')); ?>
                     <?php echo $form->error($model,'shareable'); ?>
+                <p> </p>
             </div>
 	
 	    <div class="row">
@@ -74,3 +75,15 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+<script>
+
+$(document).ready(function(){
+    $(".chackbox:checked").click(function(){
+     // alert("Value: " + $("#Album_description").val());
+    var $text = $("#Album_description").val();
+  
+      $('p').append($text);
+    });
+
+});
+</script>
