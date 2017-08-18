@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/wamp64/www/projectyii/protected/views/album/update.php</file>
             <file>file:/C:/wamp64/www/projectyii/protected/views/album/_form.php</file>
-            <file>file:/C:/wamp64/www/projectyii/protected/views/user/_formUpdate.php</file>
-            <file>file:/C:/wamp64/www/projectyii/protected/views/user/_form.php</file>
-            <file>file:/C:/wamp64/www/projectyii/protected/views/user/_view.php</file>
+            <file>file:/C:/wamp64/www/projectyii/protected/controllers/PhotoController.php</file>
             <file>file:/C:/wamp64/www/projectyii/themes/photoGal/views/layouts/main.php</file>
-            <file>file:/C:/wamp64/www/projectyii/protected/components/WebUser.php</file>
-            <file>file:/C:/wamp64/www/projectyii/protected/models/User.php</file>
+            <file>file:/C:/wamp64/www/projectyii/protected/views/album/_view.php</file>
+            <file>file:/C:/wamp64/www/projectyii/protected/views/album/index.php</file>
             <file>file:/C:/wamp64/www/projectyii/protected/views/user/update.php</file>
-            <file>file:/C:/wamp64/www/projectyii/protected/controllers/UserController.php</file>
+            <file>file:/C:/wamp64/www/projectyii/protected/models/Album.php</file>
         </group>
     </open-files>
 </project-private>

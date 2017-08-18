@@ -24,10 +24,50 @@ $cs->scriptMap = array(
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    <?php
+$cs->registerCssFile(Yii::app()->theme->baseUrl.'/js/select2-3.5.2/select2.css');
+$cs->registerCssFile(Yii::app()->theme->baseUrl.'/js/imperavi-redactor/redactor.css'); // the Imperavi Redactor theme style
+
+$cs->registerScriptFile($p.'js/jquery.min.js', CClientScript::POS_HEAD); // update to jquery 2.1.1
+$cs->registerScriptFile($p.'js/jquery-migrate-1.2.1.min.js', CClientScript::POS_HEAD); // using jquery migrate for deprecated function support
+
+$cs->registerScriptFile($p.'js/jquery-ui.min.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/script.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.cookie.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.ba-bbq.js', CClientScript::POS_HEAD);
+
+$cs->registerScriptFile($p.'js/jquery.ui.datepicker-de.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.yiiactiveform.js', CClientScript::POS_HEAD);
+//
+$cs->registerScriptFile($p.'js/jquery.floatThead.min.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.yiigridview.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/yiigridview.helpers.js', CClientScript::POS_HEAD);
+
+$cs->registerScriptFile('jquery.yiitab.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/loader.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.blockUI.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.yiilistview.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.maskedinput.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.scrollTo.1.4.2.min.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.form.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/select2-3.5.2/select2.min.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/select2-3.5.2/select2_locale_de.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.autosize.min.js', CClientScript::POS_HEAD);
+
+$cs->registerScriptFile($p.'js/common.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.tinysort.min.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.jsearchable.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.jtaggable.js', CClientScript::POS_HEAD);
+$cs->registerScriptFile($p.'js/jquery.jtaggable.model.js', CClientScript::POS_HEAD);
+
+$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/imperavi-redactor/redactor.js', CClientScript::POS_END); // the imperavi redactor js
+$cs->registerScriptFile(Yii::app()->theme->baseUrl.'/js/imperavi-redactor/lang/de.js', CClientScript::POS_END);  // the imperavi redactor language definitions for deutsch
+?>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
 	<!-- blueprint CSS framework -->
+        
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
@@ -60,6 +100,7 @@ $cs->scriptMap = array(
 			    $userMenu=array(
 				array('label'=>'Welcome '.Yii::app()->user->firstname),
 				array('label'=>'My Albums', 'url'=>'/album/admin'),
+                              
 				array('label'=>'Settings', 'url'=>array('/user/update','id'=>Yii::app()->user->id)),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 				);
@@ -78,6 +119,7 @@ $cs->scriptMap = array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/album/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                              array('label'=>'Test Javascript', 'url'=>array('/test/index'), 'visible'=>Yii::app()->user->isAdmin()),
                              array('label'=>'Album', 'url'=>array('/album/'), 'visible'=>Yii::app()->user->isAdmin()),
                                 array('label'=>'Photo', 'url'=>array('/photo/'), 'visible'=>Yii::app()->user->isAuthor()),
 				
