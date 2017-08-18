@@ -77,9 +77,27 @@ If you have business inquiries or other questions, please fill out the following
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>
 	</div>
+        <div class="row buttons">
+		<?php echo CHtml::submitButton('Submit2', array("onclick:"=>'myFunction()')); ?>
+	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
 
 <?php endif; ?>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("contact-form");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text+"submit"+ submit();
+}
+</script>

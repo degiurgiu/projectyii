@@ -26,6 +26,7 @@ Hover Me</div>
   
 </div>
   <p id="javascript"></p>
+  <p id="math"></p>
  
 <script>
     //to repet javascript DOM, BOM, FUNCTIONS 
@@ -58,13 +59,23 @@ var person = {
     firstName : "John",
     lastName  : "Doe",
     age       : 50,
-    eyeColor  : "blue"
+    eyeColor  : "blue",
+    fullName: function() {//Invoking a Function as a Method
+        return this.firstName + " " + this.lastName;
+    }
 };
+var myObject = {//this object has similar  filds like person
+    firstName:"Mary",
+    lastName: "Doe",
+};
+
+
 function toCelsius(f) {
     return (5/9) * (f-32);
 }
-document.getElementById("javascript").innerHTML =
-person.firstName + " is " + person.age + " years old."+"<br/> temperatura: "+toCelsius(81)+" celsius"+"<br/> print a variable  "+ x +"<br/> curent data "+ d;
+document.getElementById("javascript").innerHTML ="A Way to use call method with similar filds: "+person.fullName.call(myObject)+"<br/>FULL name is "+ person.fullName() +
+"<br/> first name is:"+person.firstName + " is " + person.age + " years old. <br/> temperatura: " +toCelsius(81)+" celsius"+"<br/> print a variable  "+ x +"<br/> curent data "+ d
++ "<br/>Page hostname is: " + window.location.hostname + " and Port number is " + window.location.port +" <br/>navigator.appName is " + navigator.language;
 function mOver(obj) {// mouse hover
     obj.innerHTML = "Thank You"
 }
@@ -82,4 +93,10 @@ function myFunction1() {
     }
     document.getElementById("javascript3").innerHTML = txt;
     }
+//<====================================================================>
+var x = function (a, b) {return a * b};
+var z = x(4, 3);
+document.getElementById("math").innerHTML = "function varable math "+x(4,3)+"<br/>";
+
+
 </script>
